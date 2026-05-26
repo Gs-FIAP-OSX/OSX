@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom"
 import logo from '../assets/svg/logo.svg'
 import { Search } from "@geist-ui/icons"
+import { useEffect, useState } from "react"
 
 const Header = () => {
+
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const onScroll = () => setIsScrolled(window.scrollY > 64)
+        window.addEventListener('scroll', onScroll)
+        return () => window.removeEventListener('scroll', onScroll)
+    }, [])
+
     return (
-        <header className="header-main">
+        <header className={`header-main ${isScrolled ? 'header-main-scrolled' : ''}`}>
             <section className="header-left">
                 <Link><img src={logo} /></Link>
                 <nav>

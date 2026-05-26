@@ -37,6 +37,66 @@ const Home = () => {
             <img src={partnership6} />
           </div>
         </section>
+
+        <section className='home-diagram'>
+          <h1>Contagem regressiva</h1>
+          <p>Todos os horários são aproximados.</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Hora/Min/Seg</th>
+                <th>Evento</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>00:38:53</td>
+                <td>Carregamento de LOX (oxigênio líquido) do navio em andamento</td>
+              </tr>
+              <tr>
+                <td>00:35:00</td>
+                <td>Carregamento de LOX auxiliar em andamento</td>
+              </tr>
+              <tr>
+                <td>00:34:43</td>
+                <td>Carregamento de combustível auxiliar (metano líquido) em andamento</td>
+              </tr>
+              <tr>
+                <td>00:32:59</td>
+                <td>Carga de combustível do navio em andamento</td>
+              </tr>
+              <tr>
+                <td>00:21:30</td>
+                <td>Raptor inicia o resfriamento do motor no propulsor e na nave.</td>
+              </tr>
+              <tr>
+                <td>00:02:50</td>
+                <td>Carga de propelente do foguete auxiliar concluída</td>
+              </tr>
+              <tr>
+                <td>00:02:10</td>
+                <td>Carga de propelente do navio concluída</td>
+              </tr>
+              <tr>
+                <td>00:00:30</td>
+                <td>O diretor de voo da SpaceX confirmou a autorização para o lançamento.</td>
+              </tr>
+              <tr>
+                <td>00:00:17</td>
+                <td>ativação do defletor de chamas</td>
+              </tr>
+              <tr>
+                <td>00:00:03</td>
+                <td>comando de inicialização do motor auxiliar</td>
+              </tr>
+              <tr>
+                <td>00:00:00</td>
+                <td>Emoção garantida</td>
+              </tr>
+            </tbody>
+          </table>
+          <img src="https://sxcontent9668.azureedge.us/cms-assets/assets/SPACEX_STARSHIP_INFOGRAPHIC_FLIGHT_12_DESKTOP_1_89bf5f162d.png" />
+        </section>
       </div>
     </main>
   )

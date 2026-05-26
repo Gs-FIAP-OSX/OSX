@@ -71,7 +71,7 @@
 
 
 .home-partnership {
-    margin-top: 50px;
+    margin-top: 120px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -91,4 +91,75 @@
     display: flex;
     width: 100px;
     height: fit-content;
+}
+
+.home-diagram {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-diagram h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.home-diagram p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #6b6b6b;
+}
+
+.home-diagram img {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+}
+
+.home-diagram table {
+  border-collapse: collapse;
+}
+
+.home-diagram thead tr {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.home-diagram th {
+  text-align: left;
+  padding: 25px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #e0e0e0;
+}
+
+.home-diagram tbody tr {
+  border-bottom: 1px solid #1f1f1f;
+  transition: var(--transition);
+  cursor: default;
+}
+
+.home-diagram tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.home-diagram td {
+  padding: 25px;
+  font-size: 0.85rem;
+  color: #d0d0d0;
+}
+
+.home-diagram td:first-child {
+  width: 260px;
+  color: #d1d5db;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.home-diagram td:last-child {
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 1px;
 }

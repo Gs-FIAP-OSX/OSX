@@ -1,0 +1,10 @@
+.home-presentation {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    background-image: url('../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center;
+}

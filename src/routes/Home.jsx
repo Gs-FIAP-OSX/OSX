@@ -4,12 +4,16 @@ import { useDate } from '../hooks/useDate'
 import { Link } from "react-router-dom"
 import { ArrowRight } from '@geist-ui/icons'
 
+import earth from '../assets/img/earth.gif'
+
 import partnership1 from '../assets/img/partnership/1.png'
 import partnership2 from '../assets/img/partnership/2.png'
 import partnership3 from '../assets/img/partnership/3.png'
 import partnership4 from '../assets/img/partnership/4.png'
 import partnership5 from '../assets/img/partnership/5.png'
 import partnership6 from '../assets/img/partnership/6.png'
+import partnership7 from '../assets/img/partnership/7.png'
+import partnership8 from '../assets/img/partnership/8.png'
 
 const Home = () => {
 
@@ -29,13 +33,26 @@ const Home = () => {
 
         <section className='home-partnership'>
           <div className='home-partnership-grid'>
-            <img src={partnership1} />
-            <img src={partnership2} />
-            <img src={partnership3} />
-            <img src={partnership4} />
-            <img src={partnership5} />
-            <img src={partnership6} />
+            <img src={partnership2} draggable={false} />
+            <img src={partnership1} draggable={false} />
+            <img src={partnership3} draggable={false} />
+            <img src={partnership4} draggable={false} />
+            <img src={partnership5} draggable={false} />
+            <img src={partnership6} draggable={false} />
+            <img src={partnership7} draggable={false} />
+            <img src={partnership8} draggable={false} />
           </div>
+        </section>
+
+        <section className='home-orbit'>
+          <article className='home-orbit-left'>
+            <p>Em Órbita</p>
+            <h1>Rastreador de Veículos</h1>
+            <h2>A OSX prevê colisões orbitais antes que aconteçam. Nossa IA cruza dados de rastreamento global, valida cenários em simulações e alerta operadores para reposicionamentos estratégicos, protegendo satélites, reduzindo riscos e garantindo continuidade operacional no espaço.</h2>
+          </article>
+          <article className='home-orbit-right'>
+            <img src={earth} draggable={false} />
+          </article>
         </section>
 
         <section className='home-diagram'>

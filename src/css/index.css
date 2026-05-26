@@ -37,6 +37,7 @@ body {
     padding: 30px 40px;
     background-image: linear-gradient(0deg, #00000000, #0000007a);
     transition: var(--transition);
+    z-index: 10;
 }
 
 .header-main-scrolled {
